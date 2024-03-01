@@ -22,4 +22,15 @@ To run the project:
 - Matplotlib
 - SciPy
 
+## Identifying Thresholds
+To identify thresholds for heart rate and breath rate estimation, visual analysis was performed on the radar data. This process was documented in the `main_vital_sign.ipynb` Jupyter Notebook, which contains both the code and visualizations of the identified thresholds.
+
+### Steps:
+1. **Loading Data**: The raw radar data (`data1.raw.bin`) was loaded into the notebook.
+2. **Data Preprocessing**: The data was scaled and reshaped to prepare it for analysis.
+3. **Threshold Identification**: Visualizations of the radar data were created to identify appropriate thresholds for heart rate and breath rate estimation.
+4. **Breath Rate Threshold**: A threshold of 600 was chosen for breath rate estimation based on the visual analysis.
+5. **Heart Rate Threshold**: The heart rate threshold was determined by analyzing the mean values of counts within a specific range of values in the radar data.
+
+For detailed steps and visualizations, refer to the [main_vital_sign.ipynb](main_vital_sign.ipynb) notebook.
 
